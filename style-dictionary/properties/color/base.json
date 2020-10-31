@@ -1,0 +1,12 @@
+{
+  "color": {
+    "black": { "value": "#000000" },
+    "white": { "value": "#FFFFFF" },
+    "blue": { "value": "#1B6FFE" },
+    "red": { "value": "#f07167" }
+  },
+  "backgroundColor": {
+    "light": { "value": "#FFFFFF" },
+    "dark": { "value": "#272640" }
+  }
+}

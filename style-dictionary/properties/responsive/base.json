@@ -1,0 +1,16 @@
+{
+  "responsive": {
+    "xs": {
+      "value": "xs"
+    },
+    "sm": {
+      "value": "sm"
+    },
+    "md": {
+      "value": "md"
+    },
+    "lg": {
+      "value": "lg"
+    }
+  }
+}
