@@ -1,6 +1,6 @@
 import React from 'react';
 import { Div, Img } from '../../_shared/theme/components';
-import InfoDanieleCarta from '../../assets/img/info-daniele-carta.png';
+import InfoDanieleCarta from '../../assets/img/info-daniele-carta.jpg';
 
 const Me = () => {
   return (
