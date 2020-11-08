@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import HomePage from '../../homepage/components';
+import Me from '../../me/components';
 import { BaseLayout } from '../theme/layout';
 
 const Routes = () => {
@@ -12,6 +13,15 @@ const Routes = () => {
         component={() => (
           <BaseLayout>
             <HomePage />
+          </BaseLayout>
+        )}
+      />{' '}
+      <Route
+        path="/me"
+        exact
+        component={() => (
+          <BaseLayout>
+            <Me />
           </BaseLayout>
         )}
       />{' '}

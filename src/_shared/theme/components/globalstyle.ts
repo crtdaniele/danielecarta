@@ -9,6 +9,8 @@ const color = theme('mode', {
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${color};
+    padding: ${token.Padding0};
+    margin: ${token.Margin0};
   }`;
 
 export { GlobalStyle };
