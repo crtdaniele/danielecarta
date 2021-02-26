@@ -3,18 +3,9 @@
 <h3>Project</h3>
 
 To start project:
+
 ```
 npm run start
-```
-
-To compile the token:
-```
-npm run compile-theme
-```
-
-To get the stats from Git:
-```
-npm run git-stats
 ```
 
 <h3>Skills</h3>

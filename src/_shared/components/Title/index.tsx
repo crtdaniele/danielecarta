@@ -5,8 +5,8 @@ import {
   cssWeight,
   cssPadding,
   cssMargin,
-} from '../styles/theme';
-import { FontWeight, Margin, Padding } from '../styles/types';
+} from '../../theme/styles/theme';
+import { FontWeight, Margin, Padding } from '../../theme/styles/types';
 
 const color = theme('mode', {
   light: token.ColorBlack,
@@ -17,6 +17,7 @@ type Props = Margin &
   Padding &
   FontWeight & {
     variant: 'h1' | 'h2';
+    textAlign?: 'left' | 'right' | 'center';
   };
 
 const Title = styled.h1<Props>`
@@ -37,6 +38,11 @@ const Title = styled.h1<Props>`
     props.variant === 'h2' &&
     css`
       font-size: ${token.SizeFont2};
+    `}
+
+  ${(props) =>
+    css`
+      text-align: ${props?.textAlign};
     `}
 `;
 

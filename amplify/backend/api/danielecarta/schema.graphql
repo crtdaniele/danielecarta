@@ -1,0 +1,12 @@
+type SnippetJS @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  snippet: String
+}
+
+type Locales @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  languages: String
+  locales: AWSJSON
+}
+ 

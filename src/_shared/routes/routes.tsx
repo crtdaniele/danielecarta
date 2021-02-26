@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomePage from '../../homepage/components';
-import Me from '../../me/components';
+import HomePage from '../../homepage/index';
+import SnippetJs from '../../snippetJs';
 import { BaseLayout } from '../theme/layout';
 
 const Routes = () => {
@@ -15,16 +15,16 @@ const Routes = () => {
             <HomePage />
           </BaseLayout>
         )}
-      />{' '}
+      />
       <Route
-        path="/me"
+        path="/snippets-javascript"
         exact
         component={() => (
           <BaseLayout>
-            <Me />
+            <SnippetJs />
           </BaseLayout>
         )}
-      />{' '}
+      />
     </Router>
   );
 };

@@ -25,3 +25,11 @@ export type FontWeight = {
 export type Collapse = {
   collapse?: 'xs' | 'sm' | 'md' | 'lg';
 };
+
+export type Align = {
+  textAlign?: 'center' | 'left' | 'right';
+};
+
+export type Height = {
+  height?: '20px' | '40px' | '60px';
+};

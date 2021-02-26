@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 type Props = {
   direction?: 'column' | 'column-reverse' | 'row' | 'row-reverse';
@@ -6,6 +6,7 @@ type Props = {
   alignItems?: 'center' | 'flex-start' | 'flex-end';
   width?: string;
   height?: string;
+  collapse?: 'xs' | 'sm' | 'md' | 'lg';
 };
 
 const Row = styled.div<Props>`
@@ -14,6 +15,14 @@ const Row = styled.div<Props>`
   align-items: ${(props) => props.alignItems};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
+
+  ${(props) =>
+    props.collapse === 'xs' &&
+    css`
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    `}
 
   display: flex;
 `;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   token,
   theme,
@@ -6,15 +6,21 @@ import {
   cssPadding,
   cssMargin,
   cssFontSzie,
-} from '../styles/theme';
-import { FontSize, FontWeight, Margin, Padding } from '../styles/types';
+} from '../../theme/styles/theme';
+import {
+  FontSize,
+  FontWeight,
+  Margin,
+  Padding,
+  Align,
+} from '../../theme/styles/types';
 
 const color = theme('mode', {
   light: token.ColorBlack,
   dark: token.ColorWhite,
 });
 
-type Props = Margin & Padding & FontSize & FontWeight;
+type Props = Margin & Padding & FontSize & FontWeight & Align;
 
 const Text = styled.p<Props>`
   ${(props) => cssWeight(props)};
@@ -24,6 +30,10 @@ const Text = styled.p<Props>`
 
   color: ${color};
   font-family: ${token.FontRoboto};
+
+  ${(props) => css`
+    text-align: ${props.textAlign};
+  `};
 `;
 
 Text.defaultProps = {

@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "Daniele Carta",
+    "role": "Frontend Developer, React, React Native, Typescript and JavaScript"
+  },
+  "social": {
+    "linkedin": "@LinkedIn",
+    "github": "@Github",
+    "communityJs": "@JavaScript Developers Italiani"
+  },
+  "snippetJs": {
+    "titlePage": "Snippets Javascript",
+    "textPage": "Ti piacerebbe avere oltre 50 snippets di codice Javascript?"
+  }
+}
