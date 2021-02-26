@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Div } from '../../../_shared/components';
+import { Div } from '../../../../_shared/components';
 import { DataStore } from '@aws-amplify/datastore';
-import { SnippetJS } from '../../../models';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import monokai from 'react-syntax-highlighter/dist/esm/styles/hljs/monokai';
+import { SnippetJS } from '../../../../models';
 import styles from './styles';
+import PreCode from '../../../../_shared/components/PreCode';
 
 const TabLists = () => {
   const [codes, setCodes] = useState<string | undefined>('');
@@ -22,13 +21,7 @@ const TabLists = () => {
 
   return (
     <Div style={styles.wrapper}>
-      <SyntaxHighlighter
-        language="javascript"
-        style={monokai}
-        wrapLongLines={true}
-      >
-        {codes}
-      </SyntaxHighlighter>
+      <PreCode>{codes}</PreCode>
     </Div>
   );
 };

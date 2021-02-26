@@ -1,5 +1,5 @@
 import React from 'react';
-import { Div, Title, Text, Spacer } from '../../../_shared/components';
+import { Div, Title, Text, Spacer } from '../../../../_shared/components';
 import { useTranslation } from 'react-i18next';
 
 const TitlePage = () => {

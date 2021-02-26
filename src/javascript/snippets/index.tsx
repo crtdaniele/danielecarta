@@ -1,9 +1,9 @@
 import React from 'react';
-import { Div } from '../_shared/components';
+import { Div } from '../../_shared/components';
 import TitlePage from './components/TitlePage/TitlePage';
 import TabLists from './components/TabLists/TabLists';
 
-const SnippetJs = () => {
+const JavascriptSnippets = () => {
   return (
     <Div>
       <TitlePage />
@@ -12,4 +12,4 @@ const SnippetJs = () => {
   );
 };
 
-export default SnippetJs;
+export default JavascriptSnippets;
