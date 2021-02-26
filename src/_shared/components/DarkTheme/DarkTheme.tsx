@@ -15,13 +15,13 @@ const DarkTheme = () => {
   return (
     <Absolute top="20px" right="20px">
       {theme.mode === 'light' && (
-        <HiOutlineLightBulb
-          style={styles.light}
-          onClick={() => turnOnOrOff('dark')}
-        />
+        <HiLightBulb style={styles.light} onClick={() => turnOnOrOff('dark')} />
       )}
       {theme.mode === 'dark' && (
-        <HiLightBulb style={styles.dark} onClick={() => turnOnOrOff('light')} />
+        <HiOutlineLightBulb
+          style={styles.dark}
+          onClick={() => turnOnOrOff('light')}
+        />
       )}
     </Absolute>
   );
